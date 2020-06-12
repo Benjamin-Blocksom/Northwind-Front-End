@@ -7,11 +7,13 @@
           class="form-control"
           #requestDescription>
       </div>
-      <label>Amount</label>
-      <input
-        type="text"
-        class="form-control"
-        #requestAmount>
+      <div>
+        <label>Amount</label>
+        <input
+          type="text"
+          class="form-control"
+          #requestAmount>
+      </div>
       <button
         class="btn btn-primary"
         (click)="onAddRequest(requestDescription.value, requestAmount.value)">
